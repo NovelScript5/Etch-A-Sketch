@@ -1,0 +1,225 @@
+body {
+
+    text-align: center;
+    font-family: consolas;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+#Game {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+#Tools {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+
+}
+
+#Tools button,#ClearColors {
+
+    width: 140px;
+    height: 34px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 1px;
+    font-family: inherit;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: width,height,0.3s;
+}
+
+#Tools button:hover,#ClearColors:hover {
+
+    width: 144px;
+    height: 38px;
+
+}
+
+
+#ColorInput{
+
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: width,height,0.3s;
+
+}
+
+#ColorInput:hover {
+
+    width: 74px;
+    height: 74px;
+
+}
+
+#ColorInput::-webkit-color-swatch {
+
+    
+    border-radius: 50%;
+
+}
+
+#Grid {
+
+    border: 1px solid black;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    box-shadow: 0 10px 10px 10px darkgray;
+    background-color: white;
+}   
+
+.Color {
+
+    background-color: brown;
+
+}
+
+#ChangeSize {
+
+    width: 120px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: 	#657786;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.Wrapper {
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 145px;
+
+}
+
+#ColorPalette {
+
+    width: 340px;
+    height: 300px;
+    border: 1px solid black;
+    margin-right: -200px;
+    margin-top: -340px;
+    box-shadow: 0 10px 10px 10px darkgray;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+    background-color: white;
+
+  
+
+}
+
+#ColorPalette h2 {
+
+    display: block;
+    background-color: white;
+
+}
+
+#ColorPalette ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    list-style: none;
+    margin-left: -14px;
+
+}
+
+#ColorPalette div {
+
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+
+}
+
+#InputHex {
+
+    width: 180px;
+    height: 30px;
+    text-indent: 42px;
+    font-family: inherit;
+    font-size: 16px;
+
+
+}
+
+#BoxArrange {
+
+    width: 254px;
+    height: 34px;
+    text-indent: 6px;
+    font-family: inherit;
+    font-size: 16px;
+
+
+}
+
+#ColorPalette ul button {
+
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    transition: width,height,0.3s;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+#ColorPalette ul button:hover {
+
+    width: 83px;
+    height: 33px;
+
+}
+
+#ColorPalette ul button img {
+
+    position: absolute;
+    top: -22px;
+
+}
+
+.Hint {
+
+    width: 340px;
+    height: 100px;
+    border: 1px solid black;
+    box-shadow: 0 10px 10px 10px darkgray;  
+    background-color: white;
+}

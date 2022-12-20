@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Etch-a-Sketch</h1>
+    
+    <div id="Game">
+
+        <div id="Tools">
+
+           
+            <input id="BoxArrange" type="text" placeholder="Per Divs for a side 1 to 100">
+            <button onclick="ChangeDivSize()">Change Size</button>
+            <input id="ColorInput" type="color">
+           <form id="HexForm">
+            <input id="InputHex" type="text" name="" placeholder="Hex Value" >
+           </form>
+            
+            <button id="RandomColor">Random Color</button>
+            <button id="Eraser">Eraser</button>
+            <button id="ClearButtton" onclick="Clear()">Clear</button>
+            <button id="SaveColor">Save Color</button>
+        </div>
+
+        <div id="Grid"></div>
+
+        <div class="Wrapper">
+
+        <div id="ColorPalette">
+
+            <h2>Chosen Colors</h2>
+
+            <ul>
+
+            </ul>
+
+            <div><button id="ClearColors">Clear Colors</button></div>
+        </div>
+
+        <div class="Hint"><h2>One Click to Copy</h2></div>
+    </div>
+
+
+    </div>
+
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
